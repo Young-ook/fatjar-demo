@@ -44,7 +44,7 @@
       "ssh_username": "ubuntu",
       "ami_virtualization_type": "{{user `aws_ami_virtualization`}}",
       "run_tags": {
-        "Name": "dateutil_ami_build-{{user `custom_timestamp`}}-{{user `aws_vpc`}}",
+        "Name": "greetings_ami_build-{{user `custom_timestamp`}}-{{user `aws_vpc`}}",
         "billing": "ops"
       },
       "tags": {
@@ -75,10 +75,10 @@
       "source_ami": "{{user `aws_source_ami`}}",
       "subnet_id": "{{user `aws_subnet`}}",
       "region": "{{user `aws_region`}}",
-      "ami_name": "dateutil-{{user `custom_timestamp`}}-{{user `aws_vpc`}}-{{user `app_version`}}",
+      "ami_name": "greetings-{{user `custom_timestamp`}}-{{user `aws_vpc`}}-{{user `app_version`}}",
       "iam_instance_profile": "{{user `aws_iam_instance_profile`}}",
       "instance_type": "{{user `aws_instance_type`}}",
-      "ami_description": "dateutil app for continuous delivery presentation",
+      "ami_description": "greetings app for continuous delivery presentation",
       "ssh_timeout": "5m",
       "associate_public_ip_address": false,
       "vpc_id": "{{user `aws_vpc`}}",

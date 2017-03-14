@@ -1,7 +1,0 @@
----
-- hosts: "*vagrant:localhost"
-  sudo: True
-  roles:
-  - smola.java
-  vars:
-    java_packages: oracle-java8-installer
