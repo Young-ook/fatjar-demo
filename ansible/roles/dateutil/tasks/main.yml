@@ -1,0 +1,6 @@
+---
+- file: dest=/opt/dateutil
+
+- s3: bucket={{ deploy_bucket }} object={{ app_package }} dest=/opt/dateutil mode=get
+
+- shell: java -jar /opt/dateutil/dateutils.one-jar.jar 
