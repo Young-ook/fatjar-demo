@@ -6,5 +6,6 @@ sudo apt-get install -y libpython2.7-dev python-pip libffi-dev libssl-dev
 cat <<EOT > /tmp/requirements.txt
 ansible==1.9.6
 awscli==1.11.44
+boto==2.45.0
 EOT
 sudo pip install -r /tmp/requirements.txt
