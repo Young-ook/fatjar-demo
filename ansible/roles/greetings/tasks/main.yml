@@ -1,6 +1,4 @@
 ---
 - file: dest=/opt/greetings state=directory mode=0755
-
-- s3: bucket={{ deploy_bucket }} object={{ app_package }} dest=/opt/greetings mode=get
-
-- shell: java -jar /opt/greetings/{{ app_binary }} 
+- shell: aws s3 cp s3://{{ deploy_bucket }}/deploy/{{ app_binary }} /opt/greetings/{{ app_binary }} 
+- shell: java -jar /opt/greetings/{{ app_binary }} & 
