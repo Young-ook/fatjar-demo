@@ -1,4 +1,4 @@
-# fatjar-demo
+# greetings example
 
 And run test
 ```
